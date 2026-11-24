@@ -1,0 +1,11 @@
+name: Verify public event restriction
+on:
+  pull_request:
+    branches: [develop]
+permissions: {}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - run: "true"
